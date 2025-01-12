@@ -1,9 +1,3 @@
-<?php
-include 'dbparameters.php';
-
-$conn = OpenCon();
-
-?>
 
 <!DOCTYPE>
 <html>
@@ -257,36 +251,8 @@ body {margin:0;}
 <br><br>
 
 
-
-<?php
-
-$sql = "SELECT id, title, description, pictureurl, rating FROM books";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
- // output data of each row
- while($row = mysqli_fetch_assoc($result)) {
-    $id = $row["id"];
-    $title = $row["title"];
-    $description = $row["description"];
-    $pictureurl = $row["pictureurl"];
-    $rating = $row["rating"];
-
-?>
-
-
    <button class="block"><a href="/book.php?id=<?php echo $id ?>" target=_blank;><?php echo $title ?></a></button>
 
-
-<?php
-}
-} else {
- echo "No books found in the database.";
-}
-
-CloseCon($conn);
-
-?>
 
 <div class="navbar">
   <a href="resources.php" target=_blank;>RESOURCES</a>
