@@ -383,10 +383,10 @@ h6,
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row {
   display: flex;
   justify-content: space-between;
-  gap: 200px;
+  gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
