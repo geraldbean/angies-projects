@@ -1,6 +1,6 @@
 :root {
-    --primary: #8f1d74;
-    --secondary: #aa46be;
+    --primary: #2933c4;
+    --secondary: #9f45b0;
     --light: #F0F6FF;
     --dark: #2c2929;
 }
@@ -225,6 +225,13 @@ h6,
         padding: 6rem 0 9rem 0;
     }
 }
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* optional rounded corners */
+}
+
 
 
 
