@@ -226,7 +226,7 @@ h6,
 }
 
 .hero-img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 15px; /* optional rounded corners */
 }
