@@ -386,7 +386,7 @@ h6,
 .row:after {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 200px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
