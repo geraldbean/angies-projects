@@ -206,7 +206,7 @@ h6,
 
 
 /*  Header */
-.hero-header {
+/* .hero-header {
     
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
@@ -217,6 +217,14 @@ h6,
         right 0px top 50%,
         center bottom;
     background-repeat: no-repeat;
+} */
+
+/* Hero Header */
+.hero-header {
+  padding: 8rem 0; /* reduced from 16rem to make image/text align better */
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 991.98px) {
@@ -225,11 +233,20 @@ h6,
     }
 }
 
+
+/* Hero Image */
 .hero-img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* .hero-img {
     max-width: 60%;
     height: auto;
-    border-radius: 15px; /* optional rounded corners */
-}
+    border-radius: 15px;
+} */
 
 
 
