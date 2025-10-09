@@ -117,40 +117,54 @@
 
                     <div class ="row">
                         <div class="column" style="background-color: #957098" >
+                            <h3 style="color:#ffffff;">Recording Quotes</h3>
                             <p style="color: #ffffff;">
-                                # Built a web application using React.<br>
-                                # Developed sharing quotes between multiple accounts, recording and editing quotes.<br>
-                                # Launched the platform as a start-up, and wrote a business plan, and pitch deck for marketing.<br>
+                            <br>
+                               The main idea behind Quotable was to be able to record quotes in one centralized place. So naturely this was 
+                               the first feature developed. We used a React framework to build the personal pages of each user. From the personal 
+                               page users are prompted to record quotes through an add button that opens up a text form. This text form has two inputs. One 
+                               is for the quote itself, and the second is for the author. This form submits by posting to a php script which records the quote as a
+                               record in the database. This record is connected to the user's account id so that their quotes 
+                               are only viewable when they log into their account. 
                             </p>
                         </div>
-                        <div class="column" style="background-color: #ffffff">
+                        <div class="column" style="background-color: #F0F6FF">
                                  <img class="img-fluid hero-img" src="HomePage/img/quotes.jpg" alt="Portfolio Image">
                         </div>
                     </div>
 
                     <div class ="row">
                         <div class="column" style="background-color: #cc7ad2" >
+                            <h3 style="color:#ffffff;">Sharing</h3>
                             <p style="color: #ffffff;">
-                                # Built a web application using React.<br>
-                                # Developed sharing quotes between multiple accounts, recording and editing quotes.<br>
-                                # Launched the platform as a start-up, and wrote a business plan, and pitch deck for marketing.<br>
+                               <br>
+                                One of the biggest features we wanted to develope was sharing. A big part of having a centralized quotebook was being
+                                able to use it to share with friends easier. So we developed a new page from the personal user's page which has a search bar where users 
+                                can search their friends by user name. The react actively reads the input characters and submits to a php form that tries to match it to 
+                                the user names of registered users. <br><br>
+                                One of the biggest hurdles we encountered was how to feed the information of a friend request to our database. Typically whenever a request 
+                                was sent to add a quote, change a colour, or edit something, the record would submit with the users id attached. 
+                                With friend requests we realized we had to submit the user's id, but it would have to be listed under the friend_id varible and not user_id varible.
+                                This was because you are sending this friend request to someone else. They access the request on their account and on their end even though 
+                                you send the request the main user_id should be their's because it is their account they are logged into.
                             </p>
                         </div>
-                        <div class="column" style="background-color: #ffffff">
-                                 <img class="img-fluid hero-img" src="HomePage/img/quotable_color.jpg" alt="Portfolio Image">
+                        <div class="column" style="background-color: #F0F6FF">
+                                 <img class="img-fluid hero-img" src="HomePage/img/friends.jpg" alt="Portfolio Image">
                         </div>
                     </div>
 
                     <div class ="row">
                         <div class="column" style="background-color: #d49fd7" >
+                              <h3 style="color:#ffffff;">Aesthetics</h3>
                             <p style="color: #ffffff;">
                                 # Built a web application using React.<br>
                                 # Developed sharing quotes between multiple accounts, recording and editing quotes.<br>
                                 # Launched the platform as a start-up, and wrote a business plan, and pitch deck for marketing.<br>
                             </p>
                         </div>
-                        <div class="column" style="background-color: #ffffff">
-                                 <img class="img-fluid hero-img" src="HomePage/img/quotable2.jpg" alt="Portfolio Image">
+                        <div class="column" style="background-color: #F0F6FF">
+                                 <img class="img-fluid hero-img" src="HomePage/img/quotable_color.jpg" alt="Portfolio Image">
                         </div>
                     </div>
                    </div>
