@@ -64,6 +64,11 @@ h6,
     vertical-align: middle;
 }
 
+.column_img img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
 /* Button */
 .btn {
     transition: .5s;
