@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Quotable</title>
+    <title>Mailbox</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -58,8 +58,8 @@
     <div class="row align-items-center justify-content-between">
       
       <div class="col-lg-6 text-center text-lg-start">
-        <h1 class="text-white mb-4 animated slideInDown">A Collection of Projects</h1>
-        <h3>There had to be a project to showcase other projects, right?</h3>
+        <h1 class="text-white mb-4 animated slideInDown">Desktop Mailbox</h1>
+        <h3>You've got mail...</h3>
       </div>
 
     </div>
@@ -91,61 +91,36 @@
         </div>
         <!-- Navbar End Here -->
 
-
-        <!-- About Start -->
-        <div class="container-xxl py-5" id="about">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">Project Overview</h5>
-                        <!-- <h1 class="mb-4">Check out my recent projects.... </h1> -->
-                        <p class="mb-4">When my era of applying to internships began I realized I needed a way to display my projects.
-                            So I figured I could customize my own portfolio site and host it through github pages.
-                            That is when I started to work on this digital portfolio built through HTML and CSS. 
-                        </p>
-                    </div>
-
-                  <!-- <div class ="row">
-                    <div class="column" style="background-color: #f4dfef">
-                        <h2>Quotable</h2>
-                        <img class="img-fluid hero-img" src="HomePage/img/quotable.jpg" alt="Portfolio Image">
-                    </div>
-                    <div class="column" style="background-color: #e8a0d8">
-                        <h2>Bob</h2>
-                        <img class="img-fluid hero-img" src="HomePage/img/bob.jpg" alt="Portfolio Image">
-                    </div>
-                    </div> -->
-
-                    <div class ="row">
-                        <div class="column" style="background-color: #b774cf" >
-                             <h3 style="color: #ffffff;">Process</h3>
-                            <p style="color: #ffffff;">
-                                <br>
-                                <!--Add text here!-->
-                                As I entered my second year of Mechantronics Engineering at Queen's, and I began to apply to summer internships, I realized 
-                                I needed a way to showcase my projects and all I had learnt from them. In that process I realized that the way in which 
-                                I showcase my projects could in itself also be a project! 
-                                <br><br>
-                                Over the course of around a week I create a new repository in my github account which became my github pages portfolio site. I used 
-                                HTML and CSS to style the pink and purple colour schemes as well as all the buttons and images. Over the process I learnt how to utilize 
-                                row and column classes in CSS to be able to display content side by side on my main page. I also learnt better how to make my displays felxible 
-                                in order to not cut off when looked at on a different sized screen. 
-                                <br><br>
-                                This site ended up being the perfect opportunity for me to practice and imporve my web design while also showcases all the other 
-                                projects I've been working on.
-                            </p>
-                        </div>
-                        <div class="column" style="background-color: #F0F6FF">
-                                 <img class="img-fluid hero-img" src="HomePage/img/vortex.jpg" alt="Portfolio Image">
-                        </div>
-                    </div>
-
-                   </div>
-
-                </div>
+        <div class="row">
+            <div class="column_img">
+                <img src="HomePage/img/mailbox_open.jpg" alt="vortex" style="width:100%">
+                <img src="HomePage/img/mailbox_closed.jpg" alt="vortex" style="width:100%">
+                <img src="HomePage/img/mailbox_closed2.jpg" alt="vortex" style="width:100%">
+                <img src="HomePage/img/mailbox_closed3.jpg" alt="vortex" style="width:100%">
+                <img src="HomePage/img/mailbox_closed4.jpg" alt="vortex" style="width:100%">
+            </div>
+            <div class="column_img">
+                <img src="HomePage/img/mailbox_open2.jpg" alt="vortex" style="width:100%">
+                <img src="HomePage/img/mailbox_open3.jpg" alt="vortex"
+                <img src="HomePage/img/mailbox_open4.jpg" alt="vortex" style="width:100%">
             </div>
         </div>
-        <!-- About End -->
+        
+        <script>
+            var elements =
+            document.getElementByClassName("column");
+            var i;
+
+            function two() {
+                for (i=0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%";
+                    elements[i].style.flex = "50%";
+                }
+            }
+        </script>
+
+    </div>
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
