@@ -51,7 +51,7 @@ h6,
     box-sizing: border-box;
 }
 
-.row {
+.gallery_row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
