@@ -60,13 +60,17 @@ h6,
 }
 
 .column_img {
-    margin-top: 8px;
-    vertical-align: middle;
+    -ms-flex: 50%;
+    flex: 50%;
+    padding: 0 4px;
+    max-width: 50%;
+    box-sizing: border-box;
 }
 
 .column_img img {
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
 }
 
 /* Button */
