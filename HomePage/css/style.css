@@ -24,6 +24,10 @@ h6,
     font-weight: 500 !important;
 }
 
+.main_text {
+    font-family: "Noto Sans", sans-serif;
+    size: 18px;
+}
 
 /* Gradient Text */
 .text-primary-gradient {
