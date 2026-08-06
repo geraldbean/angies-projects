@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Diffy</title>
+    <title>Mars Rover</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -98,57 +98,61 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Project Overview</h5>
                         <!-- <h1 class="mb-4">Check out my recent projects.... </h1> -->
-                        <p class="mb-4"> This project aimed to use the Robot Operating System (ROS) to navigate autonomously from 
-                        a start point to a destination. The goal was to model a rover that could naviagte on the surface of Mars and 
-                        collect samples left behind by Perserverance. 
+                        <p class="mb-4"> 
+                            This robot was designed to achieve the hypothetical task of collecting 
+                            10 samples on the surface of Mars left behind by NASA’s Perseverance Rover. 
+                            The robot utilized LIDAR, SHARP sensors, Arduino Uno, and Raspberry Pi 
+                            along with the implementation of the Robot Operating System (ROS) to 
+                            generate a map of the terrain and autonomously navigate to collect each 
+                            sample. 
                         </p>
                     </div>
 
-                  <!-- <div class ="row">
-                    <div class="column" style="background-color: #f4dfef">
-                        <h2>Quotable</h2>
-                        <img class="img-fluid hero-img" src="HomePage/img/quotable.jpg" alt="Portfolio Image">
+                <div class="gallery_row">
+                    <div class="column_img">
+                        <img src="HomePage/img/203_bot.jpg" alt="vortex">
+                        <img src="HomePage/img/203_laser_map.png" alt="vortex">
+                        <!-- <img src="HomePage/img/mailbox_circuit.jpg" alt="vortex">
+                        <img src="HomePage/img/mailbox_open.jpg" alt="vortex"> -->
+                        <!-- <img src="HomePage/img/mailbox_closed.jpg" alt="vortex"> -->
                     </div>
-                    <div class="column" style="background-color: #e8a0d8">
-                        <h2>Bob</h2>
-                        <img class="img-fluid hero-img" src="HomePage/img/bob.jpg" alt="Portfolio Image">
+                    <div class="column_img">
+                        <img src="HomePage/img/203_sharp.jpg" alt="vortex">
+                        <!-- <img src="HomePage/img/quotes.jpg" alt="vortex"> -->
+                        <!-- <img src="HomePage/img/mailbox_circuit.jpg" alt="vortex"> -->
                     </div>
-                    </div> -->
+                </div>
 
                     <div class ="row">
                         <div class="column" style="background-color: #b774cf" >
-                             <h3 style="color: #ffffff;">Autonomy, ROS, & Lidar</h3>
+                             <h3 style="color: #ffffff;">Encoder Ticks</h3>
                             <p style="color: #ffffff;">
                                 <br>
-                                This rover auchieved autonomy predominantly using a lidar scan of the test environment which was used to generate a laser map
-                                that the rover could use to navigate from a starting point to anywhere else on the map.
+                                Encoder ticks were tracked and used as a means for the robot to distinguish how far 
+                                it has travelled. Knowing the diameter of the wheels it was possible to determine the 
+                                distance travelled with each tick. Multiplying the distance per tick with the number of 
+                                ticks in total was then the total linear distance travelled.
                                 <br><Br>
-                                 <img class="img-fluid hero-img" src="HomePage/img/drawing_claw.png" alt="Portfolio Image">
+                                 <img class="img-fluid hero-img" src="HomePage/img/203_bot.jpg" alt="Portfolio Image">
                                 <br>
                             </p>
-                        </div>
-                        <div class="column" style="background-color: #F0F6FF">
-                                 <img class="img-fluid hero-img" src="HomePage/img/sketch_sides.png" alt="Portfolio Image">
-                                 <img class="img-fluid hero-img" src="HomePage/img/half_claw.png" alt="Portfolio Image">
                         </div>
                     </div>
 
                     <div class ="row">
                         <div class="column" style="background-color: #ad44b5" >
-                             <h3 style="color: #ffffff;">Further Considerations</h3>
+                             <h3 style="color: #ffffff;">Mapping and Autonomy</h3>
                             <p style="color: #ffffff;">
                                <br>
-                                I had a few additional thoughts when conceptualizing this design which I thought would be important. 
-                                One would be the orientation of the claw. I know that the cuurent Newton Sediment Sampler is oriented vertically. 
-                                I think my design would work best if it were horizontal. As it acts like a sift I think that having it vertically oriented 
-                                would leave room for unfiltered partiles to catch at the bottom.
-                                <br><br>
-                                Furthermore, I know that the current design uses rubber cups which I think could also work for my design. However, I have 
-                                considered if maybe a denser kind of rubber that hold form better would be more effective for a sift like design.
+                                With a 360 LIDAR mounted to the top of the robot chassis it was possible to generate 
+                                a map of the surrounding environment. Then using ROS, the LIDAR data was published to 
+                                a laser scan topic which could be visualized through RVIZ. This set the basis for the 
+                                robot to be able to navigate autonomously by providing it with an understanding of 
+                                its surroundings.
                             </p>
                         </div>
                         <div class="column" style="background-color: #F0F6FF">
-                             <img class="img-fluid hero-img" src="HomePage/img/assm2.png" alt="Portfolio Image">
+                             <img class="img-fluid hero-img" src="HomePage/img/203_laser_map.png" alt="Portfolio Image">
                         </div>
                     </div>
 
